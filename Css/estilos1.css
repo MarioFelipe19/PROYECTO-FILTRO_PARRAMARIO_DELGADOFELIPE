@@ -55,19 +55,19 @@ html {
 
     nav label {
         display: inline-block;
-        border: 1px solid black;
+        border: 2px dashed black;
         border-radius: 5px;
-        width: 10vw;
+        width: 12vw;
         height: 10vw;
-        margin:  1vw 0 1vw 4vw ;
-        line-height: 10svw;
+        margin: 2vw 0 2vw 4vw;
+        line-height: 11vw;
         font-weight: bold;
         user-select: none;
     }
 
     nav ul {
         display: none;
-        
+
     }
 
     nav input:checked~ul {
@@ -84,19 +84,21 @@ html {
         border-radius: 25px;
         color: white;
         font-size: 1.8em; */
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         border-radius: 10px;
         background: rgb(58, 117, 194);
-        margin: 0 9vw 0 0 ;
-        padding: 10px;
+        margin: 0 9vw 1vw 0;
+        padding: 3vw;
         list-style: none;
-        
+
     }
 
-    nav a{
+    nav a {
         text-decoration: none;
         color: yellow;
         font-size: 6vw;
     }
+
     nav li:hover {
         opacity: 85%;
         color: white;
@@ -113,7 +115,7 @@ html {
         opacity: 90%;
         border-radius: 25px;
         order: 3;
-        
+
     }
 
     section {
@@ -135,7 +137,8 @@ html {
     }
 
     section+section {
-        color: white;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     section+section em {
@@ -193,6 +196,7 @@ html {
     }
 
     footer section {
+        background-color: black;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -201,37 +205,67 @@ html {
 
     footer section div img {
         width: 50vw;
+        order: 1;
     }
 
     footer section+section {
         gap: 3vw;
+        font-size: 6vw;
+        color: white;
+        order: 2;
+    }
+
+    footer section+section+section {
+        order: 7;
     }
 
     footer section+section+section div img {
-        width: 25vw;
+        width: 16vw;
     }
 
     footer section+section+section+section {
         gap: 3vw;
+        order: 4;
     }
 
     footer section+section+section+section+section {
         gap: 3vw;
+        order: 5;
+    }
+
+    footer section+section+section+section+section+section {
+        order: 6;
+    }
+    footer section+section+section+section+section+section form label{
+        font-size: 5vw;
+    }
+
+    footer section+section+section+section+section+section form div{
+        margin-bottom: 3vw;
+    }
+
+    footer section+section+section+section+section+section form button{
+        padding: 3vw 5vw;
+        background-color: #007bff; 
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    footer section+section+section+section+section+section form button{
+        background-color: #0056b3;
+    }
+    footer section+section+section+section+section+section+section {
+        order: 3;
     }
 
     footer section+section+section+section+section+section+section+section {
-        border-radius: 0px;
-        background-color: black;
-        padding: 0vw 0vw 5vw;
+        order: 8;
     }
 
     footer section+section+section+section+section+section+section hr {
-        width: 50vw;
+        width: 70vw;
     }
 
-    footer section+section+section+section+section+section+section a {
-        text-decoration: none;
-        color: yellow;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
 }
