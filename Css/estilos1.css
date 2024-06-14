@@ -25,7 +25,7 @@ html {
     }
 
     header h1 {
-        font-size: 12.3vw;
+        font-size: 12vw;
         color: white;
         text-align: center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -34,7 +34,7 @@ html {
 
     header div a img {
         width: 22vw;
-        border-radius: 20px;
+        border-radius: 22px;
     }
 
 
@@ -110,10 +110,12 @@ html {
         opacity: 90%;
         border-radius: 25px;
         order: 3;
+        padding: 0 0 7vw;
 
     }
 
     section {
+        
         border: solid 2px gold;
         border-radius: 25px;
         background-color: white;
@@ -122,63 +124,53 @@ html {
     }
 
     section h2 {
-        color: black;
+        color: gray;
         font-size: 7.5vw;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 0 0 0 6vw;
+    }
+
+    :root{
+        --color: black;
+    }
+
+    section h2 b{
+        color: var(--color);
     }
 
     section+section {
         display: flex;
         flex-direction: column;
         text-align: center;
-    }
-
-    section+section {
+        border-radius: 0px;
         color: black;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 5vw 5vw 0vw;
     }
 
     section+section em {
         color: black;
     }
 
-    section+section a {
-        text-decoration: none;
-        color: gold;
-    }
-
-    section+section img {
-        width: 30vw;
-        border-radius: 10px;
-    }
-
-    section+section+section h5 {
-        color: black;
-        font-size: 5vw;
-    }
-
-    article {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 4vw;
-    }
-
-    article div img {
+    .main--img img {
         width: 50vw;
-        border-radius: 10px;
+        height: 28vh;
+        
     }
 
-    article section h5 {
+    section+section div button{
+        
+        background-color: #007bff; 
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 4vw 30vw 4VW ;
+    }
+    section h5 {
         color: black;
         font-size: 5vw;
-    }
-
-    article section ul {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        align-items: start;
+        color: gold;
     }
 
     /* FOOTER */
@@ -204,18 +196,26 @@ html {
         width: 50vw;
         order: 1;
     }
+
     footer section+section h5{
         font-size: 6vw;
         color: white;
     }
+
     footer section+section {
         color: yellow;
         order: 2;
+
     }
+    .lista--texto {
+        padding: 0 0 0 1vw;
+    }
+
     footer section+section  li{
         list-style: none;
-        margin: 0 4vw 5vw 0 ;
+        margin: 0 7vw 2vw 0 ;
     }
+
     footer section+section  li::before{
         content: '';
         display: inline-block;
@@ -226,6 +226,7 @@ html {
         background-size: cover;
         margin-right: 9vw;
     }
+
     footer section+section+section {
         order: 7;
     }
@@ -239,7 +240,10 @@ html {
         gap: 3vw;
         order: 4;
     }
-    
+    footer section+section+section+section ul li+li+li::before{
+        background-image: none;
+    }
+
     footer section+section+section+section  li::before{
         content: '';
         display: inline-block;
@@ -254,12 +258,15 @@ html {
         gap: 3vw;
         order: 6;
     }
+
     footer section+section+section+section+section div img{
         width: 19vw;
     }
+
     footer section+section+section+section+section+section {
         order: 5;
     }
+
     footer section+section+section+section+section+section form label{
         font-size: 5vw;
     }
@@ -267,6 +274,7 @@ html {
     footer section+section+section+section+section+section form div{
         margin-bottom: 3vw;
     }
+
     footer section+section+section+section+section+section  li::before{
         content: '';
         display: inline-block;
@@ -290,6 +298,7 @@ html {
     footer section+section+section+section+section+section form button{
         background-color: #0056b3;
     }
+
     footer section+section+section+section+section+section+section {
         order: 3;
     }
