@@ -25,11 +25,11 @@ html {
     }
 
     header h1 {
-        font-size: 11vw;
+        font-size: 12.3vw;
         color: white;
         text-align: center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin: 6vw 0 0 2vw;
+        margin: 6vw 0 0 4vw;
     }
 
     header div a img {
@@ -79,11 +79,6 @@ html {
     }
 
     nav li {
-        /* text-decoration: none;
-        background-color: rgb(28, 107, 81);
-        border-radius: 25px;
-        color: white;
-        font-size: 1.8em; */
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         border-radius: 10px;
         background: rgb(58, 117, 194);
@@ -122,11 +117,13 @@ html {
         border: solid 2px gold;
         border-radius: 25px;
         background-color: white;
+        font-size: 4.5vw;
+        padding: 0 0 0 3vw;
     }
 
     section h2 {
         color: black;
-        font-size: 7vw;
+        font-size: 7.5vw;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
@@ -155,9 +152,9 @@ html {
         border-radius: 10px;
     }
 
-    section+section+section h6 {
+    section+section+section h5 {
         color: black;
-        font-size: 1em;
+        font-size: 5vw;
     }
 
     article {
@@ -172,9 +169,9 @@ html {
         border-radius: 10px;
     }
 
-    article section h6 {
+    article section h5 {
         color: black;
-        font-size: 1em;
+        font-size: 5vw;
     }
 
     article section ul {
@@ -207,34 +204,61 @@ html {
         width: 50vw;
         order: 1;
     }
-
-    footer section+section {
-        gap: 3vw;
+    footer section+section h5{
         font-size: 6vw;
         color: white;
+    }
+    footer section+section {
+        color: yellow;
         order: 2;
     }
-
+    footer section+section  li{
+        list-style: none;
+        margin: 0 4vw 5vw 0 ;
+    }
+    footer section+section  li::before{
+        content: '';
+        display: inline-block;
+        width: 5vw;
+        height: 5vw;
+        background-image: url(../img/mapa.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 9vw;
+    }
     footer section+section+section {
         order: 7;
     }
 
     footer section+section+section div img {
-        width: 16vw;
+        width: 20vw;
+        margin: 0 0 3vw ;
     }
 
     footer section+section+section+section {
         gap: 3vw;
         order: 4;
     }
-
+    
+    footer section+section+section+section  li::before{
+        content: '';
+        display: inline-block;
+        width: 5vw;
+        height: 5vw;
+        background-image: url(../img/telefono.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 9vw;
+    }
     footer section+section+section+section+section {
         gap: 3vw;
-        order: 5;
-    }
-
-    footer section+section+section+section+section+section {
         order: 6;
+    }
+    footer section+section+section+section+section div img{
+        width: 19vw;
+    }
+    footer section+section+section+section+section+section {
+        order: 5;
     }
     footer section+section+section+section+section+section form label{
         font-size: 5vw;
@@ -242,6 +266,16 @@ html {
 
     footer section+section+section+section+section+section form div{
         margin-bottom: 3vw;
+    }
+    footer section+section+section+section+section+section  li::before{
+        content: '';
+        display: inline-block;
+        width: 5vw;
+        height: 5vw;
+        background-image: url(../img/reloj.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 9vw;
     }
 
     footer section+section+section+section+section+section form button{
