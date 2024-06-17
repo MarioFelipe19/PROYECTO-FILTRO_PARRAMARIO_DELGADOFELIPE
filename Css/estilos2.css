@@ -172,6 +172,10 @@ html {
         font-size: 5vw;
         color: gold;
     }
+    
+    .container{
+        display: none;
+    }
 
     /* FOOTER */
     /* --------------------------------------------------- */
@@ -202,27 +206,28 @@ html {
         bottom: 1vw;
         z-index: 1vw;
         padding: 0 0 0 31vw;
+        order: 2;
     }
     footer section+section h5{
         font-size: 6vw;
         color: white;
     }
 
-    footer section+section {
+    footer section+section+section {
         color: yellow;
-        order: 2;
+        order: 3;
 
     }
     .lista--texto {
         padding: 0 0 0 1vw;
     }
 
-    footer section+section  li{
+    footer section+section+section  li{
         list-style: none;
         margin: 0 7vw 2vw 0 ;
     }
 
-    footer section+section  li::before{
+    footer section+section+section  li::before{
         content: '';
         display: inline-block;
         width: 5vw;
@@ -233,24 +238,24 @@ html {
         margin-right: 9vw;
     }
 
-    footer section+section+section {
-        order: 7;
+    footer section+section+section+section {
+        order: 8;
     }
 
-    footer section+section+section div img {
+    footer section+section+section+section div img {
         width: 20vw;
         margin: 0 0 3vw ;
     }
 
-    footer section+section+section+section {
+    footer section+section+section+section+section {
         gap: 3vw;
-        order: 4;
+        order: 5;
     }
-    footer section+section+section+section ul li+li+li::before{
+    footer section+section+section+section+section ul li+li+li::before{
         background-image: none;
     }
 
-    footer section+section+section+section  li::before{
+    footer section+section+section+section+section  li::before{
         content: '';
         display: inline-block;
         width: 5vw;
@@ -260,28 +265,28 @@ html {
         background-size: cover;
         margin-right: 9vw;
     }
-    footer section+section+section+section+section {
+    footer section+section+section+section+section+section {
         gap: 3vw;
-        order: 6;
+        order: 7;
     }
 
-    footer section+section+section+section+section div img{
+    footer section+section+section+section+section+section div img{
         width: 19vw;
     }
 
-    footer section+section+section+section+section+section {
-        order: 5;
+    footer section+section+section+section+section+section+section {
+        order: 6;
     }
 
-    footer section+section+section+section+section+section form label{
+    footer section+section+section+section+section+section+section form label{
         font-size: 5vw;
     }
 
-    footer section+section+section+section+section+section form div{
+    footer section+section+section+section+section+section+section form div{
         margin-bottom: 3vw;
     }
 
-    footer section+section+section+section+section+section  li::before{
+    footer section+section+section+section+section+section+section  li::before{
         content: '';
         display: inline-block;
         width: 5vw;
@@ -292,7 +297,7 @@ html {
         margin-right: 9vw;
     }
 
-    footer section+section+section+section+section+section form button{
+    footer section+section+section+section+section+section+section form button{
         padding: 3vw 5vw;
         background-color: #007bff; 
         color: #fff;
@@ -301,19 +306,98 @@ html {
         cursor: pointer;
     }
 
-    footer section+section+section+section+section+section form button{
+    footer section+section+section+section+section+section+section form button{
         background-color: #0056b3;
     }
 
-    footer section+section+section+section+section+section+section {
+    footer section+section+section+section+section+section+section+section {
         order: 3;
     }
 
-    footer section+section+section+section+section+section+section+section {
-        order: 8;
+    footer section+section+section+section+section+section+section+section+section {
+        order: 9;
     }
 
-    footer section+section+section+section+section+section+section hr {
+    footer section+section+section+section+section+section+section+section hr {
         width: 70vw;
+    }
+}
+
+@media (min-width: 426px) {
+    header {
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+
+    main section{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(58, 117, 194);
+        font-family: Arial, sans-serif;
+    }
+    
+    .container {
+        text-align: center;
+        width: 80vw;
+    }
+    
+    .loading-bar {
+        width: 100%;
+        background-color: #ddd;
+        border-radius: 2vw;
+        overflow: hidden;
+        height: 4vw;
+        position: relative;
+    }
+    
+    .loading-fill {
+        height: 100%;
+        width: 0;
+        background-color: green;
+        border-radius: 2vw 0 0 2vw;
+        animation: load 300s linear infinite;
+    }
+    
+    @keyframes load {
+        0% {
+            width: 0;
+        }
+        99.9% {
+            width: 100%;
+        }
+        100% {
+            width: 0;
+        }
+    }
+    
+    #loading-text {
+        margin-top: 2vw;
+        font-size: 4vw;
+        color: white;
+    }
+    
+    @media (min-width: 426px) {
+        .container {
+            width: 50vw;
+        }
+    
+        .loading-bar {
+            height: 3vw;
+        }
+    
+        #loading-text {
+            font-size: 3vw;
+        }
     }
 }
