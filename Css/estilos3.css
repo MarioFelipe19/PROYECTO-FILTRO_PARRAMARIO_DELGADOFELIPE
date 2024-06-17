@@ -131,7 +131,7 @@ html {
     }
 
     :root{
-        --color: black;
+        --color: gold;
     }
 
     section h2 b{
@@ -142,7 +142,7 @@ html {
         display: flex;
         flex-direction: column;
         text-align: center;
-        border-radius: 10px;
+        border-radius: 0px;
         color: black;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         margin: 5vw 5vw 0vw;
@@ -172,6 +172,10 @@ html {
         font-size: 5vw;
         color: gold;
     }
+    
+    section ul li{
+        color: gray;
+    }
 
     /* FOOTER */
     /* --------------------------------------------------- */
@@ -190,6 +194,9 @@ html {
         flex-direction: column;
         text-align: center;
         border: none;
+    }
+    footer section ul li{
+        color: gold;
     }
 
     footer section div img {
