@@ -49,7 +49,9 @@ Use la sección de "Issues" en GitHub.
 
 Bugs Conocidos y Posibles Correcciones
 Problema: La página no se adapta correctamente en algunos dispositivos móviles.
-Solución: Mejorar el CSS para incluir más consultas de medios y pruebas en diversos dispositivos. 
+Solución: Mejorar el CSS para incluir más consultas de medios y pruebas en diversos dispositivos como en un pc. 
+Pantalla de Pc:
+![Escritorio](./img/ESCRITORIO.png)
 
 Preguntas Frecuentes (FAQ)
 ¿Cómo añado un producto al carrito de compras?
