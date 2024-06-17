@@ -25,8 +25,11 @@ open index.html
 
 Para ver las otras páginas, navegue a las siguientes URLs:
 Página principal: index.html
+![Inicio](./img/INICIO.png)
 Quiénes Somos: Html/quienes_somos.html
+![Qienes Somos](./img/QUIENES%20SOMOS.png.png)
 Carrito de Compras: Html/carrito_de_compras.html
+![Compras](./img/COMPRAS.pngINICIO.png)
 
 Tecnologías Utilizadas
 HTML5: Para la estructura de las páginas web.
