@@ -115,7 +115,7 @@ html {
     }
 
     section {
-        
+
         border: solid 2px gold;
         border-radius: 25px;
         background-color: white;
@@ -130,11 +130,11 @@ html {
         padding: 0 0 0 6vw;
     }
 
-    :root{
+    :root {
         --color: black;
     }
 
-    section h2 b{
+    section h2 b {
         color: var(--color);
     }
 
@@ -155,25 +155,26 @@ html {
     .main--img img {
         width: 50vw;
         height: 28vh;
-        
+
     }
 
-    section+section div button{
-        
-        background-color: #007bff; 
+    section+section div button {
+
+        background-color: #007bff;
         color: #fff;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        padding: 4vw 30vw 4VW ;
+        padding: 4vw 30vw 4VW;
     }
+
     section h5 {
         color: black;
         font-size: 5vw;
         color: gold;
     }
-    
-    .container{
+
+    .container {
         display: none;
     }
 
@@ -200,7 +201,8 @@ html {
         width: 50vw;
         order: 1;
     }
-    footer section+section div img#whatsapp{
+
+    footer section+section div img#whatsapp {
         width: 15vw;
         position: fixed;
         bottom: 1vw;
@@ -208,7 +210,8 @@ html {
         padding: 0 0 0 31vw;
         order: 2;
     }
-    footer section+section h5{
+
+    footer section+section h5 {
         font-size: 6vw;
         color: white;
     }
@@ -218,16 +221,17 @@ html {
         order: 3;
 
     }
+
     .lista--texto {
         padding: 0 0 0 1vw;
     }
 
-    footer section+section+section  li{
+    footer section+section+section li {
         list-style: none;
-        margin: 0 7vw 2vw 0 ;
+        margin: 0 7vw 2vw 0;
     }
 
-    footer section+section+section  li::before{
+    footer section+section+section li::before {
         content: '';
         display: inline-block;
         width: 5vw;
@@ -244,18 +248,19 @@ html {
 
     footer section+section+section+section div img {
         width: 20vw;
-        margin: 0 0 3vw ;
+        margin: 0 0 3vw;
     }
 
     footer section+section+section+section+section {
         gap: 3vw;
         order: 5;
     }
-    footer section+section+section+section+section ul li+li+li::before{
+
+    footer section+section+section+section+section ul li+li+li::before {
         background-image: none;
     }
 
-    footer section+section+section+section+section  li::before{
+    footer section+section+section+section+section li::before {
         content: '';
         display: inline-block;
         width: 5vw;
@@ -265,12 +270,13 @@ html {
         background-size: cover;
         margin-right: 9vw;
     }
+
     footer section+section+section+section+section+section {
         gap: 3vw;
         order: 7;
     }
 
-    footer section+section+section+section+section+section div img{
+    footer section+section+section+section+section+section div img {
         width: 19vw;
     }
 
@@ -278,15 +284,15 @@ html {
         order: 6;
     }
 
-    footer section+section+section+section+section+section+section form label{
+    footer section+section+section+section+section+section+section form label {
         font-size: 5vw;
     }
 
-    footer section+section+section+section+section+section+section form div{
+    footer section+section+section+section+section+section+section form div {
         margin-bottom: 3vw;
     }
 
-    footer section+section+section+section+section+section+section  li::before{
+    footer section+section+section+section+section+section+section li::before {
         content: '';
         display: inline-block;
         width: 5vw;
@@ -297,16 +303,16 @@ html {
         margin-right: 9vw;
     }
 
-    footer section+section+section+section+section+section+section form button{
+    footer section+section+section+section+section+section+section form button {
         padding: 3vw 5vw;
-        background-color: #007bff; 
+        background-color: #007bff;
         color: #fff;
         border: none;
         border-radius: 5px;
         cursor: pointer;
     }
 
-    footer section+section+section+section+section+section+section form button{
+    footer section+section+section+section+section+section+section form button {
         background-color: #0056b3;
     }
 
@@ -323,81 +329,356 @@ html {
     }
 }
 
-@media (min-width: 426px) {
-    header {
-        display: none;
+/* TABLET */
+/* --------------------------------------------------- */
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 4vw;
     }
-    nav{
+
+    /* HEADER */
+    /* --------------------------------------------------- */
+    header {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        order: 2;
+    }
+
+    header h1 {
+        font-size: 17vw;
+        color: white;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: 6vw 0 0 4vw;
+    }
+
+    header div a img {
+        width: 22vw;
+        border-radius: 22px;
+    }
+
+
+    /* NAV */
+    /* --------------------------------------------------- */
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 1vw;
+        z-index: 1;
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+        gap: 2vw;
+        order: 1;
+    }
+
+    nav label {
+        display: inline-block;
+        border: 2px dashed black;
+        border-radius: 5px;
+        width: 12vw;
+        height: 10vw;
+        margin: 2vw 0 2vw 4vw;
+        line-height: 11vw;
+        font-weight: bold;
+        user-select: none;
+    }
+
+    nav ul {
+        display: none;
+
+    }
+
+    nav input:checked~ul {
+        display: block;
+    }
+
+    nav input {
         display: none;
     }
 
-    main section{
-        display: none;
+    nav li {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 10px;
+        background: rgb(58, 117, 194);
+        margin: 0 9vw 1vw 0;
+        padding: 3vw;
+        list-style: none;
+
     }
-    footer{
-        display: none;
+
+    nav a {
+        text-decoration: none;
+        color: yellow;
+        font-size: 6vw;
     }
-    body {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: rgb(58, 117, 194);
-        font-family: Arial, sans-serif;
-    }
-    
-    .container {
-        text-align: center;
-        width: 80vw;
-    }
-    
-    .loading-bar {
-        width: 100%;
-        background-color: #ddd;
-        border-radius: 2vw;
-        overflow: hidden;
-        height: 4vw;
-        position: relative;
-    }
-    
-    .loading-fill {
-        height: 100%;
-        width: 0;
-        background-color: green;
-        border-radius: 2vw 0 0 2vw;
-        animation: load 300s linear infinite;
-    }
-    
-    @keyframes load {
-        0% {
-            width: 0;
-        }
-        99.9% {
-            width: 100%;
-        }
-        100% {
-            width: 0;
-        }
-    }
-    
-    #loading-text {
-        margin-top: 2vw;
-        font-size: 4vw;
+
+    nav li:hover {
+        opacity: 85%;
         color: white;
     }
-    
-    @media (min-width: 426px) {
-        .container {
-            width: 50vw;
-        }
-    
-        .loading-bar {
-            height: 3vw;
-        }
-    
-        #loading-text {
-            font-size: 3vw;
-        }
+
+    /* MAIN */
+    /* --------------------------------------------------- */
+    main {
+        background-color: rgb(44, 73, 116);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 4vw;
+        opacity: 90%;
+        border-radius: 25px;
+        order: 3;
+        padding: 0 0 7vw;
+
     }
+
+    .container {
+        display: none;
+    }
+
+    section {
+
+        border: solid 2px gold;
+        border-radius: 25px;
+        background-color: white;
+        font-size: 4.5vw;
+        padding: 0 0 0 3vw;
+    }
+
+    #sec1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        display: flex;
+        align-items: center;
+    }
+
+    section h2 {
+        text-align: center;
+        color: gray;
+        font-size: 15vw;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 0 0 0 6vw;
+
+    }
+
+    :root {
+        --color: black;
+    }
+
+    section h2 b {
+        color: var(--color);
+    }
+
+    section+section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 0px;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 5vw 5vw 0vw;
+    }
+
+    section+section em {
+        color: black;
+    }
+
+    .main--img img {
+        width: 50vw;
+        height: 28vh;
+
+    }
+
+    section+section div button {
+
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 4vw 20vw 4VW;
+    }
+
+    section h5 {
+        color: black;
+        font-size: 5vw;
+        color: gold;
+    }
+
+    /* FOOTER */
+    /* --------------------------------------------------- */
+    footer {
+        display: grid;
+        background-color: black;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 4vw;
+        order: 4;
+    }
+
+    footer section {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: none;
+    }
+
+    #secf1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    footer section div img {
+        width: 50vw;
+        order: 1;
+    }
+
+    footer section+section div img#whatsapp {
+        width: 15vw;
+        position: fixed;
+        bottom: 1vw;
+        z-index: 1vw;
+        padding: 0 0 0 31vw;
+        order: 2;
+    }
+
+    #secf2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    footer section+section h5 {
+        font-size: 6vw;
+        color: white;
+    }
+
+    footer section+section+section {
+        color: yellow;
+        order: 3;
+
+    }
+
+    .lista--texto {
+        padding: 0 0 0 1vw;
+    }
+
+    footer section+section+section li {
+        list-style: none;
+        margin: 0 7vw 2vw 0;
+    }
+
+    footer section+section+section li::before {
+        content: '';
+        display: inline-block;
+        width: 5vw;
+        height: 5vw;
+        background-image: url(../img/mapa.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 9vw;
+    }
+
+    footer section+section+section+section {
+        order: 8;
+    }
+
+    footer section+section+section+section div img {
+        width: 20vw;
+        margin: 0 0 3vw;
+    }
+
+    footer section+section+section+section+section {
+        gap: 3vw;
+        order: 5;
+    }
+
+    footer section+section+section+section+section ul li+li+li::before {
+        background-image: none;
+    }
+
+    footer section+section+section+section+section li::before {
+        content: '';
+        display: inline-block;
+        width: 5vw;
+        height: 5vw;
+        background-image: url(../img/telefono.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 9vw;
+    }
+
+    footer section+section+section+section+section+section {
+        gap: 3vw;
+        order: 7;
+    }
+
+    footer section+section+section+section+section+section div img {
+        width: 19vw;
+    }
+
+    footer section+section+section+section+section+section+section {
+        order: 6;
+    }
+
+    footer section+section+section+section+section+section+section form label {
+        font-size: 5vw;
+    }
+
+    footer section+section+section+section+section+section+section form div {
+        margin-bottom: 3vw;
+    }
+
+    footer section+section+section+section+section+section+section li::before {
+        content: '';
+        display: inline-block;
+        width: 5vw;
+        height: 5vw;
+        background-image: url(../img/reloj.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 9vw;
+    }
+
+    footer section+section+section+section+section+section+section form button {
+        padding: 3vw 5vw;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    footer section+section+section+section+section+section+section form button {
+        background-color: #0056b3;
+    }
+
+    footer section+section+section+section+section+section+section+section {
+        order: 3;
+    }
+
+    footer section+section+section+section+section+section+section+section+section {
+        order: 9;
+    }
+
+    footer section+section+section+section+section+section+section+section hr {
+        width: 70vw;
+    }
+
+    #secf9 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+
 }
